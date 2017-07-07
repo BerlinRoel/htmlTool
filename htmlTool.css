@@ -1,0 +1,12 @@
+.txtCode {
+	height: 600px;
+	width: 100%;
+	overflow: scroll;
+	resize: both;
+}
+
+.output {
+	height: 760px;
+	width: 100%;
+	border: solid 1px black;
+}
