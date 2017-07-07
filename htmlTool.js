@@ -27,7 +27,210 @@ $(document).ready(function(){
 			var v=this.value, s=this.selectionStart, e=this.selectionEnd;
 			this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;
 		}
+	});
+
+	$(".btn-alert-success").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"alert alert-success\">\n" +
+		"	<strong>Success!</strong> Indicates a successful or positive action.\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	});
+
+	$(".btn-alert-warning").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"alert alert-warning\">\n" +
+		"	<strong>Success!</strong> Indicates a successful or positive action.\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
 	}); 
+
+	$(".btn-alert-info").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"alert alert-info\">\n" +
+		"	<strong>Success!</strong> Indicates a successful or positive action.\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	});
+
+	$(".btn-alert-danger").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"alert alert-danger\">\n" +
+		"	<strong>Success!</strong> Indicates a successful or positive action.\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	}); 	 		
+
+	$(".btn-thumbnail").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"container\">\n" +          
+		"	<img src=\"McLaren-mr-bean-p.jpg\" class=\"img-thumbnail\" alt=\"Cinque Terre\" width=\"304\" height=\"236\">\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	}); 
+
+	$(".btn-img-rounded").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"container\">\n" +          
+		"	<img src=\"McLaren-mr-bean-p.jpg\" class=\"img-rounded\" alt=\"Cinque Terre\" width=\"304\" height=\"236\">\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	});
+
+	$(".btn-img-circle").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"container\">\n" +          
+		"	<img src=\"McLaren-mr-bean-p.jpg\" class=\"img-circle\" alt=\"Cinque Terre\" width=\"304\" height=\"236\">\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	});
+
+	$(".btn-img-responsive").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+		"<div class=\"container\">\n" +          
+		"	<img src=\"McLaren-mr-bean-p.jpg\" class=\"img-responsive\" alt=\"Cinque Terre\" width=\"414\" height=\"500\">\n" +
+		"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		       
+	}); 		
+
+	$(".btn-basic-table").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+            "<div class=\"table-responsive\">\n" +
+			"	<table class=\"table table-hover\">\n" +
+			"		<thead>\n" +
+			"			<tr>\n" +
+			"				<th>Firstname</th>\n" +
+			"				<th>Lastname</th>\n" +
+			"				<th>Email</th>\n" +
+			"			</tr>\n" +
+			"		</thead>\n" +
+			"		<tbody>\n" +
+			"			<tr>\n" +
+			"				<td>John</td>\n" +
+			"				<td>Doe</td>\n" +
+			"				<td>john@example.com</td>\n" +
+			"			</tr>\n" +
+			"			<tr>\n" +
+			"				<td>Mary</td>\n" +
+			"				<td>Moe</td>\n" +
+			"				<td>mary@example.com</td>\n" +
+			"			</tr>\n" +
+			"			<tr>\n" +
+			"				<td>July</td>\n" +
+			"				<td>Dooley</td>\n" +
+			"				<td>july@example.com</td>\n" +
+			"			</tr>\n" +
+			"		</tbody>\n" +
+			"	</table>\n" +
+			"</div>\n";
+
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();			
+    });
+
+	$(".btn-striped-table").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+            "<div class=\"table-responsive\">\n" +        
+			"	<table class=\"table table-striped table-hover\">\n" +
+			"		<thead>\n" +
+			"			<tr>\n" +
+			"				<th>Firstname</th>\n" +
+			"				<th>Lastname</th>\n" +
+			"				<th>Email</th>\n" +
+			"			</tr>\n" +
+			"		</thead>\n" +
+			"		<tbody>\n" +
+			"			<tr>\n" +
+			"				<td>John</td>\n" +
+			"				<td>Doe</td>\n" +
+			"				<td>john@example.com</td>\n" +
+			"			</tr>\n" +
+			"			<tr>\n" +
+			"				<td>Mary</td>\n" +
+			"				<td>Moe</td>\n" +
+			"				<td>mary@example.com</td>\n" +
+			"			</tr>\n" +
+			"			<tr>\n" +
+			"				<td>July</td>\n" +
+			"				<td>Dooley</td>\n" +
+			"				<td>july@example.com</td>\n" +
+			"			</tr>\n" +
+			"		</tbody>\n" +
+			"	</table>\n" +
+			"</div>\n";
+
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();			
+    });    
+
+	$(".btn-grid3-equal").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+			"<div class=\"container-fluid\">\n" +
+			"	<div class=\"row\">\n" +
+			"		<div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n" +
+			"		<div class=\"col-sm-4\" style=\"background-color:lavenderblush;\">.col-sm-4</div>\n" +
+			"		<div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n" +
+			"	</div>\n" +
+			"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		
+	});
+
+	$(".btn-grid2-unequal").on('click', function() {
+        var $txt = $(".txtCode");
+        var caretPos = $txt[0].selectionStart;
+        var textAreaTxt = $txt.val();
+        var txtToAdd = 
+			"<div class=\"container-fluid\">\n" +
+			"	<div class=\"row\">\n" +
+			"		<div class=\"col-sm-4\" style=\"background-color:lavender;\">.col-sm-4</div>\n" +
+			"		<div class=\"col-sm-8\" style=\"background-color:lavenderblush;\">.col-sm-8</div>\n" +
+			"	</div>\n" +
+			"</div>\n";
+        $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
+        render();		
+	});	
 
     $(".btn-form-login").on('click', function() {
         var $txt = $(".txtCode");
@@ -53,6 +256,7 @@ $(document).ready(function(){
         var caretPos = $txt[0].selectionStart;
         var textAreaTxt = $txt.val();
         var anyText = prompt("Please enter value for your text", "Any text goes here");
+        if (anyText == null) return;
         $txt.val(textAreaTxt.substring(0, caretPos) + anyText + textAreaTxt.substring(caretPos) );
         render();
     });
@@ -62,6 +266,7 @@ $(document).ready(function(){
         var caretPos = $txt[0].selectionStart;
         var textAreaTxt = $txt.val();
         var className = prompt("Please enter a class name", "className");
+        if (className == null) return;
         var txtToAdd = 
 			"class=\"" +  className + "\"";
         $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
@@ -142,7 +347,6 @@ $(document).ready(function(){
 
 		}, false);
 	})();
-
 
 });
 
